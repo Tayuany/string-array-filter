@@ -1,0 +1,20 @@
+def filter_strings(array):
+    result = []
+    for string in array:
+        if len(string) <= 3:
+            result.append(string)
+    return result
+
+def main():
+    # Входной массив строк
+    input_array = ["Hello", "2", "world", ":-)"]
+
+    # Фильтрация массива строк
+    output_array = filter_strings(input_array)
+
+    # Вывод результата
+    print("Input array:", input_array)
+    print("Output array:", output_array)
+
+if __name__ == "__main__":
+    main()
